@@ -615,6 +615,10 @@
             //   });
             // }
 
+      
+
+            
+
           document.getElementById("StarEntryForm").onsubmit = function(e){
             e.preventDefault();
             const starName = document.getElementById("star-name-input").value.trim();
@@ -637,6 +641,25 @@
 
            document.getElementById("StarEntryForm").reset();
           }
+
+          // Put star up for sale 
+          // starNotary.ownerOf(5,function(error,result){
+          //   if(!error){
+          //     console.log(result);
+          //   }else{
+          //     console.log(error);
+          //   }
+          // });
+
+          // starNotary.putStarUpForSale(5,100000,function(error,result){
+          //     if(!error){
+          //       console.log('star for sale',result);
+          //     } else {
+          //       console.log(error);
+          //     }
+          //   })
+
+
 
           // Event listener to provide info existing Stars (with existing _tokenId)
             document.getElementById("tokenIdForm").addEventListener("submit",function(event){

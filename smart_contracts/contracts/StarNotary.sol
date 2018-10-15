@@ -72,10 +72,8 @@ contract StarNotary is ERC721Token {
     }
 
 
-
-
     function putStarUpForSale(uint256 _tokenId, uint256 _price) public { 
-        require(this.ownerOf(_tokenId) == msg.sender);
+        require(this.ownerOf(_tokenId) == msg.sender,"The token is not owned by this address");
 
         starsForSale[_tokenId] = _price;
     }
